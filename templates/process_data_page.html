@@ -1,0 +1,35 @@
+{% extends 'layouts/base.html' %}
+{% include 'include/navigation.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-3">
+            <a href="{% url 'processing_data:process_dme' %}" class="btn btn-primary btn-block">Process DME</a>
+        </div>
+        <div class="col-md-3">
+            <a href="{% url 'processing_data:process_kaon' %}" class="btn btn-success btn-block">Process KAON</a>
+        </div>
+        <div class="col-md-3">
+            <a href="{% url 'processing_data:process_landis' %}" class="btn btn-warning btn-block">Process LANDIS</a>
+        </div>
+        <div class="col-md-3">
+            <a href="{% url 'processing_data:process_data' %}" class="btn btn-danger btn-block">Process LG</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block javascript %}
+   {% include 'includes/scripts.html' %}
+{% endblock %}
+  
+{% block footer %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <p>&copy; 2023 Your Company</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

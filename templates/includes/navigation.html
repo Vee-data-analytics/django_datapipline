@@ -1,0 +1,76 @@
+
+<nav id="navbar-main" aria-label="Primary navigation" class="navbar navbar-main navbar-expand-lg navbar-theme-primary pt-4 navbar-dark">
+  <div class="container position-relative">
+      <div class="navbar-collapse collapse mr-auto" id="navbar_global">
+          <div class="navbar-collapse-header">
+              <div class="row">
+                  <div class="col-6 collapse-brand">
+                      <a href="/">
+                          <img src="/static/assets/img/brand/light.svg" alt="Volt logo">
+                      </a>
+                  </div>
+                  <div class="col-6 collapse-close">
+                      <a href="#navbar_global" class="fas fa-times" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" title="close" aria-label="Toggle navigation"></a>
+                  </div>
+              </div>
+          </div>
+          <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+              <li class="nav-item mr-2">
+                  <a href="/dashboard.html" class="nav-link">Dashboard</a>
+              </li>x
+              <li class="nav-item mr-2">
+                  <a href="/settings.html" class="nav-link">Profile</a>
+              </li>
+          </ul>
+      </div><!--
+      <div class="d-flex align-items-center ml-auto">
+          <a href="https://appseed.us/admin-dashboards/django-dashboard-volt" 
+             target="_blank" class="btn btn-secondary text-dark mr-md-3">
+             <span class="fas fa-rocket mr-2"></span>
+             Product
+             </a>-->
+          <a href="{% url 'authentication:logout' %}" 
+             class="btn btn-outline-soft d-none d-lg-block">
+             <span class="fas fa-sign-out-alt mr-2"></span> Logout</a>
+          <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+      </div>
+  </div>
+</nav>
+
+</header>
+
+<main>
+
+<div class="preloader bg-soft flex-column justify-content-center align-items-center">
+  <img class="loader-element animate__animated animate__jackInTheBox" src="/static/assets/img/brand/light.svg" height="60" alt="Volt logo">
+</div>
+
+<!-- Hero -->
+<section class="section-header pb-5 pb-lg-8 bg-primary text-white">
+  <div class="container">
+      <div class="row">
+          <div class="col-12 text-center">
+              <img class="navbar-brand-dark mb-3" src="/static/assets/img/brand/light.svg" height="50" alt="Logo light">
+              <h1 class="display-3 mb-2">Microtronix </h1>
+              <div class="mb-4">
+                  <h2 class="h4 text-muted">Datapipeline Dashboard</h2>
+              </div>
+              <!-- Button Modal -->
+              <div class="d-flex justify-content-center align-items-end flex-wrap mb-4">
+                  <a href="/dashboard.html" class="btn btn-secondary text-dark mr-3 mb-2 mb-lg-0"><span class="fas fa-chart-line mr-2 d-none d-sm-inline"></span> Dashboard Demo</a>
+              </div>
+              <div class="d-flex justify-content-center flex-column mb-4">
+                  <a href="https://themesberg.com" target="_blank">
+                      <!--<img src="/static/assets/img/themesberg.svg" class="d-block mx-auto mb-2" height="20" width="20" alt="Themesberg Logo">
+                      <span class="text-muted font-small">-->
+                      &copy; Microtronix
+                      </span>
+                  </a>
+                  <a href="https://appseed.us?ref=demo" class="font-size-sm">Coded in Jinja by Monde</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
